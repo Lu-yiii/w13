@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>攝氏轉華氏 - 有回傳值</title>
+</head>
+<body>
+    <script>
+        function convertCtoF(celsius) {
+            let fahrenheit = (celsius * 9 / 5) + 32;
+            return fahrenheit;
+        }
+
+        let c = parseFloat(prompt("請輸入攝氏溫度：", ""));
+        if (!isNaN(c)) {
+            let f = convertCtoF(c);           // 呼叫函式取得華氏
+            alert("華氏溫度為: " + f);        // 顯示結果
+        } else {
+            alert("請輸入有效的數字！");
+        }
+    </script>
+</body>
+</html>
